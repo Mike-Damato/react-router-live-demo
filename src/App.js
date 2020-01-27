@@ -47,6 +47,9 @@ function App() {
         <Route path="/route-props">
           <RouteProps />
         </Route>
+        <Route path="/favoritedessert/:dessertId">
+          <FavoriteDessert />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
