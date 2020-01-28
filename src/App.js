@@ -32,24 +32,12 @@ function App() {
       </nav>
       
       <Switch>
-        <Route path="/browserrouter">
-          <BrowserRouter />
-        </Route>
-        <Route path="/link">
-          <LinkNavLink />
-        </Route>
-        <Route path="/switch-route">
-          <SwitchRoute />
-        </Route>
-        <Route path="/resources">
-          <Resources />
-        </Route>
-        <Route path="/route-props">
-          <RouteProps />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Route path="/browserrouter" component={BrowserRouter} />
+        <Route path="/link" component={LinkNavLink} />
+        <Route path="/switch-route" component={SwitchRoute} />
+        <Route path="/resources" component={Resources} />
+        <Route path="/route-props" component={RouteProps} />
+        <Route path="/" component={Home} />
       </Switch>
     </div>
   );
